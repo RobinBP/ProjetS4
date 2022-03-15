@@ -1,0 +1,1122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+body {
+    display: block;
+    /*justify-content: center;
+    align-items: center;*/
+    min-height: 100vh;
+    background: #10131c;
+    color: #fff;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+/* ------------------ CSS Containers ------------------ */
+
+.container1 {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.container2 {
+    padding-top: 150px;
+    margin-left: 120px;
+    width: 550px;
+    font-size: 20px;
+}
+
+.container3 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container4 {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.container5 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.container6 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container7 {
+    position: relative;
+    width: 1800px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container8 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container9 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container10 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container11 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container12 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container13 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container14 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+/* ------------------ CSS Bouton ------------------ */
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bouton a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    border: 2px solid #c2ae95;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.bouton a:hover {
+    color: #000;
+    filter: drop-shadow(0 0 5px #c2ae95 ) drop-shadow(0 0 10px #c2ae95 ) drop-shadow(0 0 15px #c2ae95 );
+    transition-delay: 1s;
+}
+
+.bouton a span {
+    position: relative;
+    z-index: 100;
+}
+
+.bouton a:nth-child(2) {
+    filter: hue-rotate(80deg);
+}
+
+.bouton a::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #c2ae95;
+    box-shadow: 5px -8px 0 #c2ae95,
+                5px 8px 0 #c2ae95;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+
+.bouton a:hover::before {
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    background: #c2ae95;
+    box-shadow: 5px 0 0 #c2ae95,
+                5px 0 0 #c2ae95;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+.bouton a::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #c2ae95;
+    box-shadow: -5px -8px 0 #c2ae95,
+                -5px 8px 0 #c2ae95;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+
+.bouton a:hover::after {
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    background: #c2ae95;
+    box-shadow: -5px 0 0 #c2ae95,
+                -5px 0 0 #c2ae95;
+    transition-delay: 0s,0.5s,1s,1s;
+}
+
+/*.button {
+    position: absolute;
+    width: 70px;
+    cursor: pointer;
+    top: 50%;
+    color: #d5cabc;
+}
+
+.button:hover {
+    color: #c2ae95 ;
+    filter: drop-shadow(0 0 2px #c2ae95 ) drop-shadow(0 0 5px #c2ae95 ) drop-shadow(0 0 15px #c2ae95 );
+}*/
+
+/* ------------------ CSS Left/Right alignment ------------------ */
+
+#droite {
+    right: 0;
+}
+
+#gauche {
+    left: 0;
+}
+
+/* ------------------ CSS Blog - Accueil ------------------ */
+
+.container3 .box {
+    position: relative;
+    width: 20%;
+    height: 475px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container3 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container3 .box:hover .contenu {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.container3 .box .contenu .imgbx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container3 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container3 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container3 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container3 .box {
+        width: 25%;
+    }
+}
+
+@media(max-width: 767px) {
+    .container3 .box {
+        width: 40%;
+    }
+}
+
+@media(max-width: 574px) {
+    .container3 .box {
+        width: 80%;
+    }
+}
+
+/* ------------------ CSS Blog - AboutMe ------------------ */
+
+/* - Contenu top - */
+.container5 .box {
+    position: relative;
+    width: 45%;
+    height: 475px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container5 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container5 .box .contenu .imgbx {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 25%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container5 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container5 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container5 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container5 .box {
+        width: 90%;
+    }
+}
+
+/* - Contenu bottom - */
+.container6 .box {
+    position: relative;
+    width: 45%;
+    height: 475px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container6 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container6 .box .contenu .imgbx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container6 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container6 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container6 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container6 .box {
+        width: 90%;
+    }
+}
+
+/* ------------------ CSS Blog - Photo/Illustration ------------------ */
+
+.container7 .photo {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.container7 .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+
+/* ------------------ CSS Blog - BOSS S3 - SITE EXAM | Portfolio ------------------ */
+
+/* - Contenu Mood Board Colors - */
+
+.container8 .box {
+    position: relative;
+    width: 15%;
+    height: 275px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container8 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container8 .box:hover .contenu {
+    opacity: 1;
+}
+
+.container8 .box .contenu .imgbx1 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #757E7B;
+}
+
+.container8 .box .contenu .imgbx2 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #4B4B70;
+}
+
+.container8 .box .contenu .imgbx3 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #CEA66B;
+}
+
+.container8 .box .contenu .imgbx4 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #fff;
+}
+
+.container8 .box .contenu .imgbx5 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #26262B;
+}
+
+.container8 .box .contenu .imgbx6 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #10131c;
+}
+
+.container8 .box .contenu .imgbx7 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container8 .box .contenu .imgbx8 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #c2ae95;
+}
+
+.container8 .box .contenu .imgbx9 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #fff;
+}
+
+.container8 .box .contenu .imgbx10 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+    background-color: #212532;
+}
+
+.container8 .box .contenu span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    line-height: 125px;
+}
+
+.container8 .box .contenu .blk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    line-height: 125px;
+    color: #000;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container8 .box {
+        width: 25%;
+    }
+}
+
+@media(max-width: 767px) {
+    .container8 .box {
+        width: 40%;
+    }
+}
+
+@media(max-width: 574px) {
+    .container8 .box {
+        width: 60%;
+    }
+}
+
+.container9 .box {
+    position: relative;
+    width: 45%;
+    height: 475px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container9 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container9 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container9 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container9 .box {
+        width: 90%;
+    }
+}
+
+.container10 .box {
+    position: relative;
+    width: 45%;
+    height: 475px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container10 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container10 .box .contenu .imgbx {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 25%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container10 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container10 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container10 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+.container10 .box .contenu .textbx li {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+
+.container10 .box .contenu img {
+    width: 750px;
+    height: 375px;
+}
+
+/* - Responsive Blog - */
+
+
+@media(max-width: 1650px) {
+    .container10 .box .contenu img {
+        width: 500px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 1150px) {
+    .container10 .box {
+        width: 90%;
+    }
+}
+
+@media(max-width: 574px) {
+    .container10 .box .contenu img {
+        width: 250px;
+        height: 125px;
+    }
+}
+
+.container11 .box {
+    position: relative;
+    width: 55%;
+    height: 300px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container11 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container11 .box .contenu .imgbx {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 25%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container11 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container11 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container11 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container11 .box {
+        width: 90%;
+    }
+}
+
+.container12 .box {
+    position: relative;
+    width: 55%;
+    height: 150px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container12 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container12 .box .contenu .imgbx {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 25%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container12 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container12 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container12 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container12 .box {
+        width: 90%;
+    }
+}
+
+.container13 .box {
+    position: relative;
+    width: 55%;
+    height: 450px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container13 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container13 .box .contenu .imgbx {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 25%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container13 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container13 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container13 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container13 .box {
+        width: 90%;
+    }
+}
+
+/* - Image CSS - Boss S3 - */
+
+.container14 .box {
+    position: relative;
+    width: 20%;
+    height: 475px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container14 .box .contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container14 .box .contenu .imgbx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container14 .box .contenu .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container14 .box .contenu .textbx h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container14 .box .contenu .textbx p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 0 15px 0 15px;
+}
+
+.container14 .box .contenu img {
+    width: 200px;
+    height: 400px;
+}
+
+/* - Responsive Blog - */
+
+@media(max-width: 1150px) {
+    .container14 .box {
+        width: 25%;
+    }
+}
+
+@media(max-width: 767px) {
+    .container14 .box {
+        width: 40%;
+    }
+}
+
+@media(max-width: 574px){
+    .container14 .box {
+        width: 80%;
+    }
+}
+
