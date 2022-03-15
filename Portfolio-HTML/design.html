@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LunAstral - Illustrations et Logo</title>
+
+    <!-- Insertion des fichiers internes CSS et JS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <script src="assets/js/fonctions.js"></script>
+
+    <!-- Insertion des fichiers externe CSS et JS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="assets/js/hover.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Container Nav Bar + Title -->
+    <div class="container1">
+        <div class="nav">
+            <span style="--i:0; --x:0; --y:0"><a href="accueil.html"><ion-icon name="home-outline"></ion-icon></a></span>
+            <span style="--i:1; --x:-1; --y:0"><a href="design.html"><ion-icon name="images-outline"></ion-icon></a></span>
+            <span style="--i:2; --x:-1; --y:1"><a href="boat.html"><ion-icon name="boat-outline"></ion-icon></ion-icon></a></span>
+            <span style="--i:3; --x:1; --y:0"><a href="photo.html"><ion-icon name="camera-outline"></ion-icon></a></span>
+            <span style="--i:4; --x:1; --y:1"><a href="planet.html"><ion-icon name="planet-outline"></ion-icon></a></span>
+            <span style="--i:5; --x:0; --y:1"><a href="portfolio.html"><ion-icon name="desktop-outline"></ion-icon></a></span>
+            <span style="--i:6; --x:1; --y:-1"><a href="com.html"><ion-icon name="mail-unread-outline"></ion-icon></a></span>
+            <span style="--i:7; --x:0; --y:-1"><a href="boss.html"><ion-icon name="browsers-outline"></ion-icon></a></span>
+            <span style="--i:8; --x:-1; --y:-1"><a href="about-me.html"><ion-icon name="person-outline"></ion-icon></a></span>
+            <h1 class="luna">lunastral.fr</h1>
+        </div>
+        <script>
+            let navigation = document.querySelector('.nav');
+            navigation.onclick = function () {
+                navigation.classList.toggle('active')}
+        </script>
+    </div>
+
+    <!-- Paragraphe pour parler d'img plus mentionner l'effet hover -->
+    <div class="container11">
+        <div class="box">
+            <div class="contenu">
+                <div class="textbx">
+                    <h5>Album Illustrations et Logos</h5>
+                    <p>
+                        Sur cette page s'affiche une partie de mes créations, que ceux-ci soient des dessins, des Illustrations plus
+                        détaillées ou bien encore de simple logo, pour des projets ou lorsque de moment de crréation libre.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Groupe d'img avec le GL hover effect -->
+    <div class="container7">
+        <div class="photo">
+            <img src="assets/img/Design/img1.png">
+            <img src="assets/img/Design/img2.jpg">
+        </div>
+        <div class="photo">
+            <img src="assets/img/Design/img3.jpg">
+            <img src="assets/img/Design/img4.png">
+        </div>
+        <div class="photo">
+            <img src="assets/img/Design/img5.png">
+            <img src="assets/img/Design/img6.png">
+        </div>
+        <div class="photo">
+            <img src="assets/img/Design/img7.png">
+            <img src="assets/img/Design/img8.gif">
+        </div>
+    </div>
+    <script type="text/javascript">
+        Array.from(document.querySelectorAll('.photo')).forEach((e) => {
+            const imgs = Array.from(e.querySelectorAll('img'));
+
+            new hoverEffect({
+                parent: e,
+                intensity: 0.3,
+                image1: imgs[0].getAttribute('src'),
+                image2: imgs[1].getAttribute('src'),
+                displacementImage: '4.jpg'
+            });
+        })
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container4">
+        <div class="row">
+            <div class="footer-column">
+                <h4>Réseaux Sociaux</h4>
+                <ul class="inline">
+                    <li><a href="#"><ion-icon size="large" name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon size="large" name="logo-discord"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon size="large" name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Mail</h4>
+                <ul>
+                    <li><a href="mailto:robin.blondeaup@mail.com"><ion-icon size="large" name="mail-outline"></ion-icon></a></li>
+                    <li><a href="mailto:robin.blondeaup@gmail.com">robin.blondeaup@mail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Téléphone</h4>
+                <ul>
+                    <li><a href="#"><ion-icon size="large" name="call-outline"></ion-icon></a></li>
+                    <li><a href="#">+33 (0) 6.98.94.63.42</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Mentions Légales</h4>
+                <ul>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li>© 2022 - lunastral.fr</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
