@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Documentation | anime.js</title>
+  <meta charset="utf-8">
+
+  <link href="assets/css/animejs.css" rel="stylesheet">
+  <link href="assets/css/anime-theme.css" rel="stylesheet">
+  <link href="assets/css/documentation.css" rel="stylesheet">
+
+  <script src="../lib/anime.min.js"></script>
+</head>
+<body>
+ 
+
+
+
+
+
+<div id="gridStaggering" class="demo">
+  <div class="demo-content staggering-grid-demo">
+    <div class="grid">
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="grid shadow">
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+    </div>
+  </div>
+</div>
+
+<div id="gridAxisStaggering" class="demo">
+  <h3 class="demo-title">Axis</h3>
+  <div class="demo-description">
+    <p>
+      Forces the direction of a <a href="gridStaggering" class="color-staggering">grid starrering</a> effect.
+    </p>
+    <pre><code>anime.stagger(value, {grid: [rows, columns], axis: 'x'})</code></pre>
+    <table>
+      <thead>
+        <td>Parameters</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td><code>'x'</code></td>
+        <td>Follows the x axis</td>
+      </tr>
+      <tr>
+        <td><code>'y'</code></td>
+        <td>Follows the y axis</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content staggering-axis-grid-demo">
+    <div class="grid">
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="grid shadow">
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+      <div class="small square"></div>
+    </div>
+  </div>
+  <script>var gridAxisStaggering = function() {
+/*DEMO*/
+anime({
+  targets: '.staggering-axis-grid-demo .el',
+  translateX: anime.stagger(10, {grid: [14, 5], from: 'center', axis: 'x'}),
+  translateY: anime.stagger(10, {grid: [14, 5], from: 'center', axis: 'y'}),
+  rotateZ: anime.stagger([0, 90], {grid: [14, 5], from: 'center', axis: 'x'}),
+  delay: anime.stagger(200, {grid: [14, 5], from: 'center'}),
+  easing: 'easeInOutQuad'
+});
+/*DEMO*/
+}
+  </script>
+</div>
+
+</article>
+<!-- -->
+
+<!-- TIMELINE -->
+<article id="timeline" class="color-tl">
+<header>
+  <h2 class="demos-title">Timeline</h2>
+</header>
+
+<div id="timelineBasics" class="demo">
+  <h3 class="demo-title">Timeline basics</h3>
+  <div class="demo-description">
+    <p>
+      Timelines let you synchronise multiple animations together.<br>
+      By default each animation added to the timeline starts after the previous animation ends.
+    </p>
+    <p>
+      Creating a timeline:
+    </p>
+<pre><code>var myTimeline = anime.timeline(parameters);</code></pre>
+    <table>
+      <thead>
+        <td>Argument</td>
+        <td>Type</td>
+        <td>Info</td>
+        <td>Required</td>
+      </thead>
+      <tr>
+        <td><code>parameters</code></td>
+        <td><code>Object</code></td>
+        <td>The default parameters of the timeline inherited by children</td>
+        <td>No</td>
+      </tr>
+    </table>
+    <p>
+      Adding animations to a timeline:
+    </p>
+<pre><code>myTimeline.add(parameters, offset);</code></pre>
+    <table>
+      <thead>
+        <td>Argument</td>
+        <td>Types</td>
+        <td>Info</td>
+        <td>Required</td>
+      </thead>
+      <tr>
+        <td><code>parameters</code></td>
+        <td><code>Object</code></td>
+        <td>The child animation parameters, override the timeline default parameters</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td><code>time offset</code></td>
+        <td><code>String</code> or <code>Number</code></td>
+        <td>Check out the <a class="color-tl" href="#timelineOffsets">Timeline offsets</a> section</td>
+        <td>No</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content basic-timeline-demo">
+    <div class="line">
+      <div class="square shadow"></div>
+      <div class="square el"></div>
+    </div>
+    <div class="line">
+      <div class="circle shadow"></div>
+      <div class="circle el"></div>
+    </div>
+    <div class="line">
+      <div class="triangle shadow"></div>
+      <div class="triangle el"></div>
+    </div>
+  </div>
+  <script>var timelineBasics = function() {
+/*DEMO*/
+// Create a timeline with default parameters
+var tl = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 750
+});
+
+// Add children
+tl
+.add({
+  targets: '.basic-timeline-demo .el.square',
+  translateX: 250,
+})
+.add({
+  targets: '.basic-timeline-demo .el.circle',
+  translateX: 250,
+})
+.add({
+  targets: '.basic-timeline-demo .el.triangle',
+  translateX: 250,
+});
+
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="timelineOffsets" class="demo">
+  <h3 class="demo-title">Time Offsets</h3>
+  <div class="demo-description">
+    <p>
+      Time offsets can be specified with a second optional parameter using the timeline <code>.add()</code> function. It defines when a animation starts in the timeline, if no offset is specifed, the animation will starts after the previous animation ends.<br>
+      An offset can be relative to the last animation or absolute to the whole timeline.
+    </p>
+    <table>
+      <thead>
+        <td>Type</td>
+        <td>Offset</td>
+        <td>Example</td>
+        <td>Infos</td>
+      </thead>
+      <tr>
+        <td>String</td>
+        <td><code>'+='</code></td>
+        <td><code>'+=200'</code></td>
+        <td>Starts 200ms after the previous animation ends</td>
+      </tr>
+      <tr>
+        <td>String</td>
+        <td><code>'-='</code></td>
+        <td><code>'-=200'</code></td>
+        <td>Starts 200ms before the previous animation ends</td>
+      </tr>
+      <tr>
+        <td>Number</td>
+        <td><code>Number</code></td>
+        <td><code>100</code></td>
+        <td>Starts at 100ms, reagardless of the animtion position in the timeline</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content offsets-demo">
+    <div class="line">
+      <div class="label">no offset</div>
+      <div class="square shadow"></div>
+      <div class="square el"></div>
+    </div>
+    <div class="line">
+      <div class="label">relative offset ('-=600')</div>
+      <div class="circle shadow"></div>
+      <div class="circle el"></div>
+    </div>
+    <div class="line">
+      <div class="label">absolute offset (400)</div>
+      <div class="triangle shadow"></div>
+      <div class="triangle el"></div>
+    </div>
+  </div>
+  <script>var timelineOffsets = function() {
+/*DEMO*/
+// Create a timeline with default parameters
+var tl = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 750
+});
+
+tl
+.add({
+  targets: '.offsets-demo .el.square',
+  translateX: 250,
+})
+.add({
+  targets: '.offsets-demo .el.circle',
+  translateX: 250,
+}, '-=600') // relative offset
+.add({
+  targets: '.offsets-demo .el.triangle',
+  translateX: 250,
+}, 0); // absolute offset
+
+/*DEMO*/
+}
+  </script>
+</div>
+
+<div id="TLParamsInheritance" class="demo">
+  <h3 class="demo-title">Parameters inheritance</h3>
+  <div class="demo-description">
+    <p>
+      Parameters set in the parent timeline instance will be inherited by all the children.
+    </p>
+    <table>
+      <thead>
+        <td>Parameters that can be inherited</td>
+      </thead>
+      <tr>
+        <td><code>targets</code></td>
+      </tr>
+      <tr>
+        <td><code>duration</code></td>
+      </tr>
+      <tr>
+        <td><code>delay</code></td>
+      </tr>
+      <tr>
+        <td><code>endDelay</code></td>
+      </tr>
+      <tr>
+        <td><code>round</code></td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content params-inheritance-demo">
+    <div class="line">
+      <div class="square shadow"></div>
+      <div class="square el"></div>
+    </div>
+    <div class="line">
+      <div class="circle shadow"></div>
+      <div class="circle el"></div>
+    </div>
+    <div class="line">
+      <div class="triangle shadow"></div>
+      <div class="triangle el"></div>
+    </div>
+  </div>
+  <script>var TLParamsInheritance = function() {
+/*DEMO*/
+var tl = anime.timeline({
+  targets: '.params-inheritance-demo .el',
+  delay: function(el, i) { return i * 200 },
+  duration: 500,
+  easing: 'easeOutExpo',
+  direction: 'alternate',
+  loop: true
+});
+
+tl
+.add({
+  translateX: 250,
+  // override the easing parameter
+  easing: 'spring',
+})
+.add({
+  opacity: .5,
+  scale: 2
+})
+.add({
+  // override the targets parameter
+  targets: '.params-inheritance-demo .el.triangle',
+  rotate: 180
+})
+.add({
+  translateX: 0,
+  scale: 1
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+</article>
+<!-- -->
+
+<!-- CONTROLS -->
+<article id="controls" class="color-controls">
+<header>
+  <h2 class="demos-title">Controls</h2>
+</header>
+
+<div id="playPause" class="demo">
+  <h3 class="demo-title">Play / Pause</h3>
+  <div class="demo-description">
+    <p>Plays a paused animation, or starts the animation if the <code>autoplay</code> parameters is set to <code>false</code>.</p>
+    <pre><code>animation.play();</code></pre>
+    <p>Pauses a running animation.</p>
+    <pre><code>animation.pause();</code></pre>
+  </div>
+  <div class="demo-content play-pause-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line controls">
+      <button class="play">Play</button>
+      <button class="pause">Pause</button>
+    </div>
+  </div>
+  <script>var playPause = function() {
+/*DEMO*/
+var animation = anime({
+  targets: '.play-pause-demo .el',
+  translateX: 270,
+  delay: function(el, i) { return i * 100; },
+  direction: 'alternate',
+  loop: true,
+  autoplay: false,
+  easing: 'easeInOutSine'
+});
+
+document.querySelector('.play-pause-demo .play').onclick = animation.play;
+document.querySelector('.play-pause-demo .pause').onclick = animation.pause;
+/*DEMO*/
+}
+
+</script>
+</div>
+
+<div id="restartAnim" class="demo">
+  <h3 class="demo-title">Restart</h3>
+  <div class="demo-description">
+    <p>Restarts an animation from its initial values.</p>
+    <pre><code>animation.restart();</code></pre>
+  </div>
+  <div class="demo-content restart-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line controls">
+      <button class="restart">Restart</button>
+    </div>
+  </div>
+  <script>var restartAnim = function() {
+/*DEMO*/
+var animation = anime({
+  targets: '.restart-demo .el',
+  translateX: 250,
+  delay: function(el, i) { return i * 100; },
+  direction: 'alternate',
+  loop: true,
+  easing: 'easeInOutSine'
+});
+
+document.querySelector('.restart-demo .restart').onclick = animation.restart;
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="reverseAnim" class="demo">
+  <h3 class="demo-title">Reverse</h3>
+  <div class="demo-description">
+    <p>Reverses the direction of an animation.</p>
+    <pre><code>animation.reverse();</code></pre>
+  </div>
+  <div class="demo-content reverse-anim-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line controls">
+      <button class="reverse">Reverse</button>
+    </div>
+  </div>
+
+  <script>
+
+  var reverseAnimDemo = anime({
+    targets: '.reverse-anim-demo .el',
+    translateX: 270,
+    duration: 2000,
+    delay: function(el, i) { return i * 200; }
+  });
+
+  document.querySelector('.reverse-anim-demo .reverse').onclick = function() {
+    reverseAnimDemo.reverse();
+  }
+
+  var reverseAnim = function() {
+/*DEMO*/
+var animation = anime({
+  targets: '.reverse-anim-demo .el',
+  translateX: 270,
+  loop: true,
+  delay: function(el, i) { return i * 200; },
+  easing: 'easeInOutSine'
+});
+
+document.querySelector('.reverse-anim-demo .reverse').onclick = animation.reverse;
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="seekAnim" class="demo">
+  <h3 class="demo-title">Seek</h3>
+  <div class="demo-description">
+    <p>Jump to a specific time (in milliseconds).</p>
+    <pre><code>animation.seek(timeStamp);</code></pre>
+    <p>Can also be used to control an animation while scrolling.</p>
+    <pre><code>animation.seek((scrollPercent / 100) * animation.duration);</code></pre>
+  </div>
+  <div class="demo-content seek-anim-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line controls">
+      <input class="progress" step=".001" type="range" min="0" max="100" value="0"></input>
+    </div>
+  </div>
+  <script>var seekAnim = function() {
+/*DEMO*/
+var animation = anime({
+  targets: '.seek-anim-demo .el',
+  translateX: 270,
+  delay: function(el, i) { return i * 100; },
+  elasticity: 200,
+  easing: 'easeInOutSine',
+  autoplay: false
+});
+
+var seekProgressEl = document.querySelector('.seek-anim-demo .progress');
+seekProgressEl.oninput = function() {
+  animation.seek(animation.duration * (seekProgressEl.value / 100));
+};
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="TLcontrols" class="demo">
+  <h3 class="demo-title">Timeline controls</h3>
+  <div class="demo-description">
+    <p>Timelines can be controled like any other <i>anime.js</i> instance.</p>
+<pre><code>timeline.play();
+timeline.pause();
+timeline.restart();
+timeline.seek(timeStamp);
+</code></pre>
+  </div>
+  <div class="demo-content timeline-controls-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+    <div class="line">
+      <div class="small triangle shadow"></div>
+      <div class="small triangle el"></div>
+    </div>
+    <div class="line controls">
+      <button class="play">Play</button>
+      <button class="pause">Pause</button>
+      <button class="restart">Restart</button>
+      <input class="progress" step=".001" type="range" min="0" max="100" value="0"></input>
+    </div>
+  </div>
+  <script>var TLcontrols = function() {
+/*DEMO*/
+var controlsProgressEl = document.querySelector('.timeline-controls-demo .progress');
+
+var tl = anime.timeline({
+  direction: 'alternate',
+  loop: true,
+  duration: 500,
+  easing: 'easeInOutSine',
+  update: function(anim) {
+    controlsProgressEl.value = tl.progress;
+  }
+});
+
+tl
+.add({
+  targets: '.timeline-controls-demo .square.el',
+  translateX: 270,
+})
+.add({
+  targets: '.timeline-controls-demo .circle.el',
+  translateX: 270,
+}, '-=100')
+.add({
+  targets: '.timeline-controls-demo .triangle.el',
+  translateX: 270,
+}, '-=100');
+
+document.querySelector('.timeline-controls-demo .play').onclick = tl.play;
+document.querySelector('.timeline-controls-demo .pause').onclick = tl.pause;
+document.querySelector('.timeline-controls-demo .restart').onclick = tl.restart;
+
+controlsProgressEl.addEventListener('input', function() {
+  tl.seek(tl.duration * (controlsProgressEl.value / 100));
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+</article>
+<!-- -->
+
+<!-- CALLBACKS -->
+<article id="callbacks" class="color-callbacks">
+<header>
+  <h2 class="demos-title">Callbacks & Promises</h2>
+</header>
+
+<div id="update" class="demo">
+  <h3 class="demo-title">Update</h3>
+  <div class="demo-description">
+    <p>
+      Callback triggered on every frame as soon as the animation starts playing.
+    </p>
+    <table>
+      <thead>
+        <td>Type</td>
+        <td>Parameters</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>Function</td>
+        <td>animation</td>
+        <td>Return the current animation Object</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content update-demo">
+    <div class="logs">
+      <input class="log progress-log"></input>
+      <input class="log update-log"></input>
+    </div>
+    <div class="circle shadow"></div>
+    <div class="circle el"></div>
+  </div>
+  <script>var update = function() {
+
+var updateLogEl = document.querySelector('.update-demo .update-log');
+var progressLogEl = document.querySelector('.update-demo .progress-log');
+
+/*DEMO*/
+var updates = 0;
+
+anime({
+  targets: '.update-demo .el',
+  translateX: 270,
+  delay: 1000,
+  direction: 'alternate',
+  loop: 3,
+  easing: 'easeInOutCirc',
+  update: function(anim) {
+    updates++;
+    progressLogEl.value = 'progress : '+Math.round(anim.progress)+'%';
+    updateLogEl.value = 'updates : '+updates;
+  }
+});
+/*DEMO*/
+}
+  </script>
+</div>
+
+<div id="beginComplete" class="demo">
+  <h3 class="demo-title">Begin & Complete</h3>
+  <div class="demo-description">
+      <p><code>begin()</code> callback is triggered once, when the animation starts playing.</p>
+      <p><code>complete()</code> callback is triggered once, when the animation is completed.</p>
+      <p class="bubble info">Both <code>begin()</code> and <code>complete()</code> callbacks are called if the animation's <code>duration</code> is <code>0</code>.</p>
+    <table>
+      <thead>
+        <td>Type</td>
+        <td>Parameters</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>Function</td>
+        <td>animation</td>
+        <td>Return the current animation Object</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content begin-complete-demo">
+    <div class="logs">
+      <input class="log progress-log"></input>
+      <input class="log begin-log" value=""></input>
+      <input class="log complete-log" value=""></input>
+    </div>
+    <div class="large circle shadow"></div>
+    <div class="large circle el"></div>
+  </div>
+  <script>var beginComplete = function() {
+
+var beginLogEl = document.querySelector('.begin-complete-demo .begin-log');
+var completeLogEl = document.querySelector('.begin-complete-demo .complete-log');
+var progressLogEl = document.querySelector('.begin-complete-demo .progress-log');
+
+beginLogEl.value = '';
+completeLogEl.value = '';
+
+/*DEMO*/
+anime({
+  targets: '.begin-complete-demo .el',
+  translateX: 240,
+  delay: 1000,
+  easing: 'easeInOutCirc',
+  update: function(anim) {
+    progressLogEl.value = 'progress : ' + Math.round(anim.progress) + '%';
+    beginLogEl.value = 'began : ' + anim.began;
+    completeLogEl.value = 'completed : ' + anim.completed;
+  },
+  begin: function(anim) {
+    beginLogEl.value = 'began : ' + anim.began;
+  },
+  complete: function(anim) {
+    completeLogEl.value = 'completed : ' + anim.completed;
+  }
+});
+/*DEMO*/
+}
+  </script>
+</div>
+
+<div id="loopBeginLoopComplete" class="demo">
+  <h3 class="demo-title">loopBegin & loopComplete</h3>
+  <div class="demo-description">
+    <p><code>loopBegin()</code> callback is triggered once everytime a loop begin.</p>
+    <p><code>loopComplete()</code> callback is triggered once everytime a loop is completed.</p>
+    <table>
+      <thead>
+        <td>Type</td>
+        <td>Parameters</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>Function</td>
+        <td>animation</td>
+        <td>Return the current animation Object</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content loopBegin-loopComplete-demo">
+    <div class="logs">
+      <input class="log loopBegin-log" value=""></input>
+      <input class="log loopComplete-log" value=""></input>
+    </div>
+    <div class="circle shadow"></div>
+    <div class="circle el"></div>
+  </div>
+  <script>var loopBeginLoopComplete = function() {
+
+var beginLogEl = document.querySelector('.loopBegin-log');
+var completeLogEl = document.querySelector('.loopComplete-log');
+
+beginLogEl.value = 'loop began 0 times';
+completeLogEl.value = 'loop complete 0 times';
+
+/*DEMO*/
+var loopBegan = 0;
+var loopCompleted = 0;
+
+anime({
+  targets: '.loopBegin-loopComplete-demo .el',
+  translateX: 240,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutCirc',
+  loopBegin: function(anim) {
+    loopBegan++;
+    beginLogEl.value = 'loop began : ' + loopBegan;
+  },
+  loopComplete: function(anim) {
+    loopCompleted++;
+    completeLogEl.value = 'loop completed : ' + loopCompleted;
+  }
+});
+/*DEMO*/
+}
+  </script>
+</div>
+
+<div id="change" class="demo">
+  <h3 class="demo-title">Change</h3>
+  <div class="demo-description">
+    <p>
+      Callback triggered on every frames in between the animation's <a href="#delay" class="color-prop-params">delay</a> and <a href="#endDelay" class="color-prop-params">endDelay</a>.
+    </p>
+    <table>
+      <thead>
+        <td>Type</td>
+        <td>Parameters</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>Function</td>
+        <td>animation</td>
+        <td>Return the current animation Object</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content change-demo">
+    <div class="logs">
+      <input class="log progress-log"></input>
+      <input class="log change-log"></input>
+    </div>
+    <div class="circle shadow"></div>
+    <div class="circle el"></div>
+  </div>
+  <script>var change = function() {
+
+var progressLogEl = document.querySelector('.change-demo .progress-log');
+var changeLogEl = document.querySelector('.change-demo .change-log');
+changeLogEl.value = 'changes : 0';
+
+/*DEMO*/
+var changes = 0;
+
+anime({
+  targets: '.change-demo .el',
+  translateX: 270,
+  delay: 1000,
+  endDelay: 1000,
+  direction: 'alternate',
+  loop: true,
+  easing: 'easeInOutCirc',
+  update: function(anim) {
+    progressLogEl.value = 'progress : '+Math.round(anim.progress)+'%';
+  },
+  change: function() {
+    changes++;
+    changeLogEl.value = 'changes : ' + changes;
+  }
+});
+/*DEMO*/
+}
+  </script>
+</div>
+
+<div id="changeBeginChangeComplete" class="demo">
+  <h3 class="demo-title">changeBegin & changeComplete</h3>
+  <div class="demo-description">
+    <p><code>changeBegin()</code> callback is triggered everytime the animation starts changing.</p>
+    <p><code>changeComplete()</code> callback is triggered everytime the animation stops changing.</p>
+    <p class="bubble warning">Animation direction will affect the order in which <code>changeBegin()</code> and <code>changeComplete()</code> are triggerd.</p>
+    <table>
+      <thead>
+        <td>Type</td>
+        <td>Parameters</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>Function</td>
+        <td>animation</td>
+        <td>Return the current animation Object</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content changeBegin-chnageComplete-demo">
+    <div class="logs">
+      <input class="log progress-log" value=""></input>
+      <input class="log changeBegin-log" value=""></input>
+      <input class="log changeComplete-log" value=""></input>
+    </div>
+    <div class="large circle shadow"></div>
+    <div class="large circle el"></div>
+  </div>
+  <script>var changeBeginChangeComplete = function() {
+
+var progressLogEl = document.querySelector('.changeBegin-chnageComplete-demo .progress-log');
+var beginLogEl = document.querySelector('.changeBegin-log');
+var completeLogEl = document.querySelector('.changeComplete-log');
+
+beginLogEl.value = 'change began : 0';
+completeLogEl.value = 'change completed : 0';
+
+/*DEMO*/
+var changeBegan = 0;
+var changeCompleted = 0;
+
+anime({
+  targets: '.changeBegin-chnageComplete-demo .el',
+  translateX: 240,
+  delay: 1000,
+  endDelay: 1000,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutCirc',
+  update: function(anim) {
+    progressLogEl.value = 'progress : '+Math.round(anim.progress)+'%';
+  },
+  changeBegin: function(anim) {
+    changeBegan++;
+    beginLogEl.value = 'change began : ' + changeBegan;
+  },
+  changeComplete: function(anim) {
+    changeCompleted++;
+    completeLogEl.value = 'change completed : ' + changeCompleted;
+  }
+});
+/*DEMO*/
+}
+  </script>
+</div>
+
+<div id="finishedPromise" class="demo">
+  <h3 class="demo-title">Finished promise</h3>
+  <div class="demo-description">
+    <p>
+      Every animation instances return a <code>finished</code> promise when the animation finised.
+    </p>
+<pre><code>animation.finished.then(function() {
+  // Do things...
+});</code></pre>
+    <p class="bubble warning">
+      Promises are not suported in IE < 11.
+    </p>
+  </div>
+  <div class="demo-content promise-demo">
+    <div class="logs">
+      <input class="log progress-log"></input>
+      <input class="log finished-log"></input>
+    </div>
+    <div class="circle shadow"></div>
+    <div class="circle el"></div>
+  </div>
+  <script>var finishedPromise = function() {
+anime.set('.promise-demo .el', {backgroundColor: ''});
+anime.set('.promise-demo .finished-log', {value: ''});
+/*DEMO*/
+var progressLogEl = document.querySelector('.promise-demo .progress-log');
+var promiseEl = document.querySelector('.promise-demo .el');
+var finishedLogEl = document.querySelector('.promise-demo .finished-log');
+var demoPromiseResetTimeout;
+
+function logFinished() {
+  anime.set(finishedLogEl, {value: 'Promise resolved'});
+  anime.set(promiseEl, {backgroundColor: '#18FF92'});
+}
+
+var animation = anime.timeline({
+  targets: promiseEl,
+  delay: 400,
+  duration: 500,
+  endDelay: 400,
+  easing: 'easeInOutSine',
+  update: function(anim) {
+    progressLogEl.value = 'progress : '+Math.round(anim.progress)+'%';
+  }
+}).add({
+  translateX: 250
+}).add({
+  scale: 2
+}).add({
+  translateX: 0
+});
+
+animation.finished.then(logFinished);
+
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+</article>
+<!-- -->
+
+<!-- SVG -->
+<article id="svg" class="color-svg">
+<header>
+  <h2 class="demos-title">SVG</h2>
+</header>
+
+<div id="motionPath" class="demo">
+  <h3 class="demo-title">Motion path</h3>
+  <div class="demo-description">
+    <p>
+      Animates an element relative to the <code>x</code>, <code>y</code> and <code>angle</code> values of an SVG path element.
+    </p>
+    <pre><code>var myPath = anime.path('svg path');</code></pre>
+    <p>
+      The path function returns a new Function that returns the specified property.
+    </p>
+    <p class="bubble info">
+      Motion path animations are responsive since v3
+    </p>
+    <table>
+      <thead>
+        <td>Parameters</td>
+        <td>Example</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td><code>'x'</code></td>
+        <td><code>myPath('x')</code></td>
+        <td>Return the current x value in <code>'px'</code> of the SVG path</td>
+      </tr>
+      <tr>
+        <td><code>'y'</code></td>
+        <td><code>myPath('y')</code></td>
+        <td>Return the current y value in <code>'px'</code> of the SVG path</td>
+      </tr>
+      <tr>
+        <td><code>'angle'</code></td>
+        <td><code>myPath('angle')</code></td>
+        <td>Return the current angle value in <code>'degres'</code> of the SVG path</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content motion-path-demo">
+    <div class="motion-path">
+      <div class="small square shadow follow-path"></div>
+      <div class="small square el follow-path"></div>
+      <svg width="256" height="112" viewBox="0 0 256 112">
+        <path fill="none" stroke="currentColor" stroke-width="1" d="M8,56 C8,33.90861 25.90861,16 48,16 C70.09139,16 88,33.90861 88,56 C88,78.09139 105.90861,92 128,92 C150.09139,92 160,72 160,56 C160,40 148,24 128,24 C108,24 96,40 96,56 C96,72 105.90861,92 128,92 C154,93 168,78 168,56 C168,33.90861 185.90861,16 208,16 C230.09139,16 248,33.90861 248,56 C248,78.09139 230.09139,96 208,96 L48,96 C25.90861,96 8,78.09139 8,56 Z"/>
+      </svg>
+    </div>
+  </div>
+  <script>var motionPath = function() {
+/*DEMO*/
+var path = anime.path('.motion-path-demo path');
+
+anime({
+  targets: '.motion-path-demo .el',
+  translateX: path('x'),
+  translateY: path('y'),
+  rotate: path('angle'),
+  easing: 'linear',
+  duration: 2000,
+  loop: true
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="morphing" class="demo">
+  <h3 class="demo-title">Morphing</h3>
+  <div class="demo-description">
+    <p>
+      Creates transition between two svg shapes.
+    </p>
+    <p class="bubble warning">
+      Shapes must have the same number of points!
+    </p><br>
+    <p class="bubble info">
+      More info on SVG shape morphing <a href="https://hackernoon.com/metamorphosis-morphing-svgs-378cf4f3aa58">here</a>.
+    </p>
+  </div>
+  <div class="demo-content align-center morphing-demo">
+    <svg width="140" height="140" viewBox="0 0 140 140">
+      <g fill="none" fill-rule="evenodd">
+        <g fill="currentColor" fill-opacity=".15" transform="translate(0 6)">
+          <polygon points="70 0 136.574 48.369 111.145 126.631 28.855 126.631 3.426 48.369"/>
+          <polygon points="70 18 119.455 53.931 100.565 112.069 39.435 112.069 20.545 53.931"/>
+          <polygon points="70 34.86 101.727 57.911 89.609 95.209 50.391 95.209 38.273 57.911"/>
+          <polygon points="70 50.898 84.864 61.697 79.186 79.171 60.814 79.171 55.136 61.697"/>
+        </g>
+        <polygon class="polymorph" stroke-width="1" stroke="currentColor" points="70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369"/>
+      </g>
+    </svg>
+  </div>
+  <script>var morphing = function() {
+/*DEMO*/
+anime({
+  targets: '.morphing-demo .polymorph',
+  points: [
+    { value: [
+      '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369',
+      '70 41 118.574 59.369 111.145 132.631 60.855 84.631 20.426 60.369']
+    },
+    { value: '70 6 119.574 60.369 100.145 117.631 39.855 117.631 55.426 68.369' },
+    { value: '70 57 136.574 54.369 89.145 100.631 28.855 132.631 38.426 64.369' },
+    { value: '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369' }
+  ],
+  easing: 'easeOutQuad',
+  duration: 2000,
+  loop: true
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="lineDrawing" class="demo">
+  <h3 class="demo-title">Line drawing</h3>
+  <div class="demo-description">
+    <p>
+      Creates path drawing animation using the <code>'stroke-dashoffset'</code> property.<br>
+      Set the path <code>'dash-offset'</code> value with <code>anime.setDashoffset()</code> in a <a href="#fromToValues" class="color-values">from to</a> formated value.
+    </p>
+    <pre><code>strokeDashoffset: [anime.setDashoffset, 0]</code></pre>
+    <p class="bubble info">
+      More info on line drawing animation <a href="https://css-tricks.com/svg-line-animation-works/">here</a>.
+    </p>
+  </div>
+  <div class="demo-content align-center line-drawing-demo">
+    <svg viewBox="0 0 280 100">
+      <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+        <path class="el" d="M58 80V50.12C57.7 41.6 51.14 35 43 35a15 15 0 0 0 0 30h7.5v15H43a30 30 0 1 1 0-60c16.42 0 29.5 13.23 30 29.89V80H58z"/>
+        <path class="el" d="M73 80V20H58v60h15z"/>
+        <path class="el" d="M58 80V49.77C58.5 33.23 71.58 20 88 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80H58zm75 0V20h-15v60h15z"/>
+        <path class="el" d="M118 80V49.77C118.5 33.23 131.58 20 148 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15zm-7.5-60a7.5 7.5 0 1 1-7.48 8v-1c.25-3.9 3.5-7 7.48-7z"/>
+        <path class="el" d="M133 65a15 15 0 0 1-15-15v-7.5h-15V50a30 30 0 0 0 30 30V65zm30 15V49.77C163.5 33.23 176.58 20 193 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15z"/>
+        <path class="el" d="M238 65a15 15 0 0 1 0-30c8.1 0 14.63 6.53 15 15h-15v15h30V49.89C267.5 33.23 254.42 20 238 20a30 30 0 0 0 0 60V65z"/>
+        <path class="el" d="M260.48 65a7.5 7.5 0 1 1-7.48 8v-1c.26-3.9 3.5-7 7.48-7z"/>
+      </g>
+    </svg>
+  </div>
+  <script>var lineDrawing = function() {
+/*DEMO*/
+anime({
+  targets: '.line-drawing-demo .lines path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+</article>
+<!-- -->
+
+<!-- EASINGS -->
+<article id="easings" class="color-easings">
+  <header>
+    <h2 class="demos-title">Easings</h2>
+  </header>
+
+<div id="linearEasing" class="demo">
+  <h3 class="demo-title">Linear</h3>
+  <div class="demo-description">
+    <p>
+      Does not apply any easing timing to your animation.<br>
+      Usefull for opacity and colors transitions.
+    </p>
+    <pre><code>easing: 'linear'</code></pre>
+  </div>
+  <div class="demo-content linear-easing-demo">
+    <div class="line">
+      <div class="square shadow"></div>
+      <div class="square el"></div>
+    </div>
+  </div>
+  <script>var linearEasing = function() {
+/*DEMO*/
+anime({
+  targets: '.linear-easing-demo .el',
+  translateX: 250,
+  direction: 'alternate',
+  loop: true,
+  easing: 'linear'
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="pennerFunctions" class="demo">
+  <h3 class="demo-title">Penner's functions</h3>
+  <div class="demo-description">
+    <p>
+      Built-in <a href="http://robertpenner.com/easing/">Robert Penner's easing functions</a>.
+    </p>
+    <p class="bubble info">
+      See easings in action on <a href="https://easings.net">easings.net</a>.
+    </p>
+    <pre><code>easing: 'easeInOutSine'</code></pre>
+    <p>
+      Availabe easings :
+    </p>
+    <table>
+      <thead>
+        <td>in</td>
+        <td>out</td>
+        <td>in-out</td>
+      </thead>
+      <tr>
+        <td><code>'easeInQuad'</code></td>
+        <td><code>'easeOutQuad'</code></td>
+        <td><code>'easeInOutQuad'</code></td>
+      </tr>
+      <tr>
+        <td><code>'easeInCubic'</code></td>
+        <td><code>'easeOutCubic'</code></td>
+        <td><code>'easeInOutCubic'</code></td>
+      </tr>
+      <tr>
+        <td><code>'easeInQuart'</code></td>
+        <td><code>'easeOutQuart'</code></td>
+        <td><code>'easeInOutQuart'</code></td>
+      </tr>
+      <tr>
+        <td><code>'easeInQuint'</code></td>
+        <td><code>'easeOutQuint'</code></td>
+        <td><code>'easeInOutQuint'</code></td>
+      </tr>
+      <tr>
+        <td><code>'easeInSine'</code></td>
+        <td><code>'easeOutSine'</code></td>
+        <td><code>'easeInOutSine'</code></td>
+      </tr>
+      <tr>
+        <td><code>'easeInExpo'</code></td>
+        <td><code>'easeOutExpo'</code></td>
+        <td><code>'easeInOutExpo'</code></td>
+      </tr>
+      <tr>
+        <td><code>'easeInCirc'</code></td>
+        <td><code>'easeOutCirc'</code></td>
+        <td><code>'easeInOutCirc'</code></td>
+      </tr>
+      <tr>
+        <td><code>'easeInBack'</code></td>
+        <td><code>'easeOutBack'</code></td>
+        <td><code>'easeInOutBack'</code></td>
+      <tr>
+    </table>
+  </div>
+  <div class="demo-content penner-equations-demo">
+
+  </div>
+  <script>var pennerFunctions = function() {
+/*DEMO*/
+var demoContentEl = document.querySelector('.penner-equations-demo');
+var fragment = document.createDocumentFragment();
+
+function createEasingDemo(easing) {
+  var demoEl = document.createElement('div');
+  demoEl.classList.add('stretched','square','el');
+  anime({
+    targets: demoEl,
+    translateX: 250,
+    direction: 'alternate',
+    loop: true,
+    delay: 200,
+    endDelay: 200,
+    easing: easing,
+  });
+  fragment.appendChild(demoEl);
+}
+
+for (var easeName in anime.penner) {
+  if (Array.isArray(anime.penner[easeName])) {
+    createEasingDemo(easeName);
+  }
+}
+
+demoContentEl.innerHTML = '';
+demoContentEl.appendChild(fragment);
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="cubicBezier" class="demo">
+  <h3 class="demo-title">Cubic Bézier Curve</h3>
+  <div class="demo-description">
+    <p>
+      Use your own custom cubic Bézier curves <code>cubicBezier(x1, y1, x2, y2)</code>.
+    </p>
+    <pre><code>easing: 'cubicBezier(.5, .05, .1, .3)'</code></pre>
+    <p class="bubble warning">
+      You can use Bézier curves generator like <a href="https://matthewlein.com/tools/ceaser">Ceaser to generate your curves coordinates</a>.
+    </p>
+  </div>
+  <div class="demo-content cubic-bezier-demo">
+    <div class="line">
+      <div class="square shadow"></div>
+      <div class="square el"></div>
+    </div>
+  </div>
+  <script>var cubicBezier = function() {
+/*DEMO*/
+anime({
+  targets: '.cubic-bezier-demo .el',
+  translateX: 250,
+  direction: 'alternate',
+  loop: true,
+  easing: 'cubicBezier(.5, .05, .1, .3)'
+})
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="springPhysicsEasing" class="demo">
+  <h3 class="demo-title">Spring</h3>
+  <div class="demo-description">
+    <p>
+      Spring physics based easing.
+    </p>
+    <pre><code>easing: 'spring(mass, stiffness, damping, velocity)'</code></pre>
+    <p class="bubble warning">
+      The duration of a spring animation is defined by the spring parameters.<br>
+      The animation <code>duration</code> parameter will not be taken into account.
+    </p>
+    <table>
+      <thead>
+        <td>Parameter</td>
+        <td>Default</td>
+        <td>Min</td>
+        <td>Max</td>
+      </thead>
+      <tr>
+        <td>Mass</td>
+        <td><code>1</code></td>
+        <td><code>0</code></td>
+        <td><code>100</code></td>
+      </tr>
+      <tr>
+        <td>Stiffness</td>
+        <td><code>100</code></td>
+        <td><code>0</code></td>
+        <td><code>100</code></td>
+      </tr>
+      <tr>
+        <td>Damping</td>
+        <td><code>10</code></td>
+        <td><code>0</code></td>
+        <td><code>100</code></td>
+      </tr>
+      <tr>
+        <td>Velocity</td>
+        <td><code>0</code></td>
+        <td><code>0</code></td>
+        <td><code>100</code></td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content spring-physics-demo">
+    <div class="line">
+      <div class="square shadow"></div>
+      <div class="square el"></div>
+    </div>
+  </div>
+  <script>var springPhysicsEasing = function() {
+/*DEMO*/
+anime({
+  targets: '.spring-physics-demo .el',
+  translateX: 250,
+  direction: 'alternate',
+  loop: true,
+  easing: 'spring(1, 80, 10, 0)'
+})
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="elasticEasing" class="demo">
+  <h3 class="demo-title">Elastic</h3>
+  <div class="demo-description">
+    <p>Elastic easing.</p>
+    <pre><code>easing: 'easeOutElastic(amplitude, period)'</code></pre>
+    <table>
+      <thead>
+        <td>in</td>
+        <td>out</td>
+        <td>in-out</td>
+      </thead>
+      <tr>
+        <td><code>'inElastic'</code></td>
+        <td><code>'outElastic'</code></td>
+        <td><code>'inOutElastic'</code></td>
+      </tr>
+    </table>
+    <table>
+      <thead>
+        <td>Parameter</td>
+        <td>Default</td>
+        <td>Min</td>
+        <td>Max</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>Amplitude</td>
+        <td><code>1</code></td>
+        <td><code>1</code></td>
+        <td><code>10</code></td>
+        <td>Controls the overshoot of the curve</td>
+      </tr>
+      <tr>
+        <td>Period</td>
+        <td><code>.5</code></td>
+        <td><code>0.1</code></td>
+        <td><code>2</code></td>
+        <td>Controls how many times the curve goes back and forth</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content elastic-easing-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el" data-ease="easeInElastic(1, .6)"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el" data-ease="easeOutElastic(1, .6)"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el" data-ease="easeInOutElastic(1, .6)"></div>
+    </div>
+  </div>
+  <script>var elasticEasing = function() {
+/*DEMO*/
+anime({
+  targets: '.elastic-easing-demo .el',
+  translateX: 270,
+  easing: function(el) {
+    return el.getAttribute('data-ease');
+  },
+  duration: 1000
+})
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="stepEasing" class="demo">
+  <h3 class="demo-title">Steps</h3>
+  <div class="demo-description">
+    <p>
+      Defines the number of jumps an animation takes to arrive at its end value.
+    </p>
+    <pre><code>easing: 'steps(numberOfSteps)'</code></pre>
+    <table>
+      <thead>
+        <td>Parameter</td>
+        <td>Default</td>
+        <td>Min</td>
+        <td>Max</td>
+      </thead>
+      <tr>
+        <td>Number of steps</td>
+        <td><code>10</code></td>
+        <td><code>1</code></td>
+        <td><code>∞</code></td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content step-easing-demo">
+    <div class="line">
+      <div class="square shadow"></div>
+      <div class="square el"></div>
+    </div>
+  </div>
+  <script>var stepEasing = function() {
+/*DEMO*/
+anime({
+  targets: '.step-easing-demo .el',
+  translateX: 250,
+  direction: 'alternate',
+  loop: true,
+  easing: 'steps(5)'
+})
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="customEasing" class="demo">
+  <h3 class="demo-title">Custom easing function</h3>
+  <div class="demo-description">
+    <p>
+      A custom easing function must be returned by <a class="color-values" href="#functionBasedPropVal">function based value</a>.
+    </p>
+    <pre><code>easing: function() { return function(time) { return time * i} }</code></pre>
+    <table>
+      <thead>
+        <td>Parameter</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>Time</td>
+        <td>Return the current time of the animation</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content custom-easing-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+  </div>
+  <script>var customEasing = function() {
+/*DEMO*/
+anime({
+  targets: '.custom-easing-demo .el',
+  translateX: 270,
+  direction: 'alternate',
+  loop: true,
+  duration: 2000,
+  easing: function(el, i, total) {
+    return function(t) {
+      return Math.pow(Math.sin(t * (i + 1)), total);
+    }
+  }
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+</article>
+<!-- -->
+
+<!-- HELPERS -->
+<article id="easings" class="color-helpers">
+  <header>
+    <h2 class="demos-title">Helpers</h2>
+  </header>
+
+<div id="remove" class="demo">
+  <h3 class="demo-title">remove</h3>
+  <div class="demo-description">
+    <p>
+      Removes targets from a running animation or timeline.<br>
+      The <code>targets</code> parameters accepts the same values as the <a class="color-targets" href="#cssSelector">targets</a> property.
+    </p>
+    <pre><code>anime.remove(targets)</code></pre>
+  </div>
+  <div class="demo-content remove-demo">
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+    <div class="line controls">
+      <button class="remove-el-button">Remove second target</button>
+    </div>
+  </div>
+  <script>var remove = function() {
+/*DEMO*/
+anime({
+  targets: '.remove-demo .el',
+  translateX: 270,
+  direction: 'alternate',
+  loop: true,
+  easing: 'easeInOutQuad'
+});
+
+document.querySelector('.remove-el-button').addEventListener('click', function() {
+  anime.remove('.remove-demo .line:nth-child(2) .el');
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="get" class="demo">
+  <h3 class="demo-title">get</h3>
+  <div class="demo-description">
+    <p>Returns the original value of an element.</p>
+    <pre><code>anime.get(target, propertyName, unit);</code></pre>
+    <p>
+      Since <i>anime.js</i> uses <a href="https://developer.mozilla.org/fr/docs/Web/API/Window/getComputedStyle">getComputedStyle</a> to access original CSS, the values are almost always returned in <code>'px'</code>, the third (optional) argument converts the value in the desired unit.
+    </p>
+    <pre><code>anime.get(domNode, 'width', 'rem');</code></pre>
+    <table>
+      <thead>
+        <td>Parameter</td>
+        <td>Type</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>target</td>
+        <td><code>'string'</code>, <code>var</code></td>
+        <td>Any valid <a class="color-targets" href="#cssSelector">targets</a> can be used</td>
+      </tr>
+    </table>
+    <p class="bubble warning">
+      CSS transforms : Only inlined values can be accessed.
+    </p>
+  </div>
+  <div class="demo-content get-value-demo">
+    <div class="line">
+      <div class="logs">
+        <div class="log get-value-demo-log"></div>
+      </div>
+      <div class="large circle shadow"></div>
+      <div class="large circle el"></div>
+    </div>
+  </div>
+  <script>var get = function() {
+/*DEMO*/
+var logEl = document.querySelector('.get-value-demo-log');
+var el = document.querySelector('.get-value-demo .el');
+
+logEl.innerHTML = '';
+logEl.innerHTML += '".el" width is :<br>';
+logEl.innerHTML += '"' + anime.get(el, 'width', 'px') + '"';
+logEl.innerHTML += ' or "' + anime.get(el, 'width', 'rem') + 'rem"'
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="set" class="demo">
+  <h3 class="demo-title">set</h3>
+  <div class="demo-description">
+    <p>
+      Immediately sets values to the specified targets.
+    </p>
+    <pre><code>anime.set(targets, {property: value});</code></pre>
+    <table>
+      <thead>
+        <td>Parameters</td>
+        <td>Types</td>
+        <td>Info</td>
+      </thead>
+      <tr>
+        <td>target(s)</td>
+        <td><code>'string'</code>, <code>var</code></td>
+        <td>Any valid <a class="color-targets" href="#cssSelector">targets</a> can be used</td>
+      </tr>
+      <tr>
+        <td>values</td>
+        <td><code>object</code></td>
+        <td>Any valid <a class="color-properties" href="#cssProperties">properties</a> can be used</td>
+      </tr>
+    </table>
+  </div>
+  <div class="demo-content set-value-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+  </div>
+  <script>var set = function() {
+/*DEMO*/
+anime.set('.set-value-demo .el', {
+  translateX: function() { return anime.random(50, 250); },
+  rotate: function() { return anime.random(0, 360); },
+});
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="random" class="demo">
+  <h3 class="demo-title">random</h3>
+  <div class="demo-description">
+    <p>
+      Returns a random integer within a specific range.
+    </p>
+    <pre><code>anime.random(minValue, maxValue);</code></pre>
+  </div>
+  <div class="demo-content random-demo">
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+  </div>
+  <script>var random = function() {
+/*DEMO*/
+function randomValues() {
+  anime({
+    targets: '.random-demo .el',
+    translateX: function() {
+      return anime.random(0, 270);
+    },
+    easing: 'easeInOutQuad',
+    duration: 750,
+    complete: randomValues
+  });
+}
+
+randomValues();
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="tick" class="demo">
+  <h3 class="demo-title">tick</h3>
+  <div class="demo-description">
+    <p>
+      Plays an animation using an external <code>requestAnimationFrame</code> loop.
+    </p>
+    <pre><code>animation.tick(time)</code></pre>
+    <p class="bubble warning">
+      Don't forget to set the <code>autoplay</code> parameter to <code>false</code> to prevent the <i>anime.js</i> built-in RAF loop to start.
+    </p>
+  </div>
+  <div class="demo-content tick-demo">
+    <div class="line">
+      <div class="circle shadow"></div>
+      <div class="circle el"></div>
+    </div>
+  </div>
+  <script>
+var customRAF = null;
+var tick = function() {
+if (customRAF) cancelAnimationFrame(customRAF);
+/*DEMO*/
+var animation = anime({
+  targets: '.tick-demo .el',
+  translateX: 270,
+  direction: 'alternate',
+  loop: true,
+  easing: 'easeInOutQuad',
+  autoplay: false
+});
+
+function loop(t) {
+  animation.tick(t);
+  customRAF = requestAnimationFrame(loop);
+}
+
+requestAnimationFrame(loop);
+/*DEMO*/
+}
+  </script>
+
+</div>
+
+<div id="running" class="demo">
+  <h3 class="demo-title">running</h3>
+  <div class="demo-description">
+    <p>
+      Returns an Array of all active <i>anime.js</i> instances currently running.
+    </p>
+    <pre><code>anime.running</code></pre>
+  </div>
+  <div class="demo-content running-demo">
+    <div class="line">
+      <div class="small square shadow"></div>
+      <div class="small square el"></div>
+    </div>
+    <div class="line">
+      <div class="small circle shadow"></div>
+      <div class="small circle el"></div>
+    </div>
+    <div class="line">
+      <div class="small triangle shadow"></div>
+      <div class="small triangle el"></div>
+    </div>
+    <div class="line">
+      <pre class="bottom log running-log"></pre>
+    </div>
+  </div>
+  <script>var running = function() {
+/*DEMO*/
+var runninLogEl = document.querySelector('.running-log');
+
+anime({
+  targets: '.running-demo .square.el',
+  translateX: 270,
+  direction: 'alternate',
+  loop: true,
+  easing: 'linear'
+});
+
+anime({
+  targets: '.running-demo .circle.el',
+  translateX: 270,
+  direction: 'alternate',
+  loop: true,
+  easing: 'easeInOutCirc'
+});
+
+anime({
+  targets: '.running-demo .triangle.el',
+  translateX: 270,
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  loop: true,
+  update: function() {
+    runninLogEl.innerHTML = 'there are currently ' + anime.running.length + ' instances running';
+  }
+});
+
+/*DEMO*/
+}
+  </script>
+</div>
+
+</article>
+<!-- -->
+
+    </section>
+    <section class="pane demo-info">
+      <header class="description-header">
+        <h2><span></span></h2>
+      </header>
+      <div class="info-output"></div>
+    </section>
+  </div>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-79927007-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="assets/js/vendors/highlight.pack.js"></script>
+  <script src="assets/js/vendors/beautify-html.js"></script>
+  <script src="assets/js/documentation.js"></script>
+</body>
+</html>
